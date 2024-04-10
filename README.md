@@ -2,6 +2,25 @@
 
 This Django project provides a RESTful API for interacting with data about planets from the Star Wars universe. It fetches data from a GraphQL API, stores it in a database, and allows CRUD operations via REST endpoints. Additionally, I provided a search feature to search and filter the planets.
 
+## Installation
+
+After cloning the repository, install the required packages using the requirements.txt file:
+
+pip install -r requirements.txt
+
+Then apply migrations:
+
+python manage.py makemigrations
+python manage.py migrate
+
+Then fetch the initial planet data from the GraphQL API:
+
+python manage.py fetchPlanets
+
+And finally run the server:
+
+python manage.py runserver
+
 ## Usage
 
 You can interact with the API through the following endpoints:
