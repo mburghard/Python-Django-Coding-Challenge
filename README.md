@@ -6,20 +6,28 @@ This Django project provides a RESTful API for interacting with data about plane
 
 After cloning the repository, install the required packages using the requirements.txt file:
 
+```
 pip install -r requirements.txt
+```
 
 Then apply migrations:
 
+```
 python manage.py makemigrations
 python manage.py migrate
+```
 
 Then fetch the initial planet data from the GraphQL API:
 
+```
 python manage.py fetchPlanets
+```
 
 And finally run the server:
 
+```
 python manage.py runserver
+```
 
 ## Usage
 
